@@ -1,0 +1,17 @@
+导出数据库：
+1、win+r输入cmd打开命令行
+2、输入以下语句导出数据库
+C:\Users\liuning>mysqldump -u root -p liuning > liuning.sql
+Enter password: root //数据库密码
+第一个liuning指导出的数据库，第二个liuning指导出的数据库脚本名。
+
+
+导入数据库：
+1、win+r打开命令行
+2、连接mysql数据库：
+	mysql -uroot -proot
+3、创建数据库（跟导出的文件名一样）
+	create database liuning;
+4、恢复数据库
+	source c:\liuning.sql
+
